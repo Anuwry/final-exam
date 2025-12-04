@@ -3,8 +3,36 @@
 Create the OOP Structure that design and implement a small object-oriented system that simulates a simple delivery service.
 ## Features:
 Creates 4 classes:
-Person, Customer, Driver and DeliveryOrder
-Then main code: Creates two customers and one driver.
+Person
+```csv
+class Person:
+    def __init__(self, name):
+        self.name = name
+```
+Customer
+```csv
+class Customer(Person):
+    def __init__(self, name, address):
+        super().__init__(name)
+        self.address = address
+```
+Driver
+```csv
+class Driver(Person):
+    def __init__(self, name, vehicle):
+        super().__init__(name)
+        self.vehicle = vehicle
+```
+DeliveryOrder
+```csv
+class DeliveryOrder:
+    def __init__(self, customer, item, status):
+        self.customer = customer
+        self.item = item
+        self.status = status
+```
+### Then main code: 
+Creates two customers and one driver.
 Each customer places an order.
 The driver is assigned to each order.
 The driver delivers the orders.
