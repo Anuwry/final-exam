@@ -11,7 +11,7 @@ class Customer(Person):
         self.address = address
     
     def price_order(self, item):
-        return DeliveryOrder(item.price)
+        return DeliveryOrder(item)
 
 class Driver(Person):
     def __init__(self, name, vehicle):
