@@ -3,7 +3,7 @@ class Person:
         self.name = name
     
     def introduce(self):
-        print(f"Hi, I'm {self.name}")
+        print(f"Hi, I'm {self.name}.")
 
 class Customer(Person):
     def __init__(self, name, address):
@@ -19,7 +19,7 @@ class Driver(Person):
         self.vehicle = vehicle
     
     def delivery(self, name, order):
-        print(f"{self.name} is delivering {order} to {name} using {self.vehicle}")
+        print(f"{self.name} is delivering {order} to {name} using {self.vehicle}.")
 
 class DeliveryOrder:
     def __init__(self, customer, item, status):
@@ -30,6 +30,7 @@ class DeliveryOrder:
     def assign_driver(self, driver):
         return f"""Order Summary:
 Item: {self.item}
+Customer: {self.customer}
 Status: {self.status}
 Driver: {driver}"""
 
@@ -50,8 +51,8 @@ if __name__ == "__main__":
     c2 = Customer("Bob", "Newyork")
     c3 = Driver("David", "motorcycle")
 
-    d1 = DeliveryOrder(c1, "Laptop", "preparing")
-    d2 = DeliveryOrder(c2, "Headphones", "preparing")
+    d1 = DeliveryOrder(c1.name, "Laptop", "preparing")
+    d2 = DeliveryOrder(c2.name, "Headphones", "preparing")
 
     print(d1.assign_driver(c3.name))
     print()
