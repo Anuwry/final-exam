@@ -17,6 +17,6 @@ OOP_Final
 ├── final3.py
 ```
 ## Screenshot
-<img width="1508" height="501" alt="image" src="https://github.com/user-attachments/assets/ae1eb6d5-4c04-4635-9e5b-0ad8a3d15b84" />
+<img width="1499" height="546" alt="image" src="https://github.com/user-attachments/assets/0b6a3f91-2b8e-41e7-b82a-ebf694b360f7" />
 
 ## Project is fully Completed without the bug
