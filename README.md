@@ -48,9 +48,8 @@ OOP_Final
 ├── final3.py
 ```
 ## Screenshot
-### IDE
+### IDE / Bash
 <img width="1499" height="546" alt="image" src="https://github.com/user-attachments/assets/0b6a3f91-2b8e-41e7-b82a-ebf694b360f7" />
-### Bash / Terminal
 <img width="653" height="452" alt="image" src="https://github.com/user-attachments/assets/e6584ef5-97b8-46a7-91fc-f2588e7172a6" />
 
 ## Project is fully Completed without the bug
